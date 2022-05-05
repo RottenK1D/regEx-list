@@ -1,0 +1,48 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Fira Code', monospace;
+    color: #472d30;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+input{
+    width: 30%;
+    height: 30px;
+    border-style: solid;
+    border-radius: 5px;
+    color: #472d30;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Validation styles*/
+
+input.valid{
+    border-color: #b7e4c7;
+    background-color:#b7e4c7;
+}
+
+input+p{
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px;
+    color: #e26d5c;
+    opacity: 0;
+    height: 0;
+}
+
+input.invalid+p{
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
